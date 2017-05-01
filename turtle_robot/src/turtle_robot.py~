@@ -193,7 +193,7 @@ class turtle_robot:
 				
 		self.rate.sleep()
 	
-    	#Force the robot to stop once the orientation is accomplished
+    	#Force the robot to stop once the orientation is reached
     	self.vel_msg.angular.z = 0
     	self.velocity_publisher.publish(self.vel_msg)
 

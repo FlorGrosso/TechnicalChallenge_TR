@@ -119,6 +119,9 @@ class turtle_robot:
 	self.vel_msg.angular.y = 0
 	self.vel_msg.angular.z = 0
 
+	#Set initial current distance
+	current_distance=0
+
 	#Loop to move the turtle a specified distance
 	self.rate = rospy.Rate(100)
 
