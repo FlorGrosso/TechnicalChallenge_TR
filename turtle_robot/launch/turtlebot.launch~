@@ -1,0 +1,13 @@
+<launch>
+
+  <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+
+  <node name="turtlebot1" pkg="turtlesim_cleaner" type="star.py">
+
+	<param name="figure_file" value="$(find turtlesim_cleaner)/figures/StarofDavid.csv"/>
+
+  	<param name="xspeed" value="5"/>
+
+  </node>
+
+</launch>
